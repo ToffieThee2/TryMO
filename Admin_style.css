@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 1550px;
+    max-width: 100%;
+    height: 44px;
+    z-index: 10;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 30px;
+    background: #0f63a1;
+    color: white;
+}
+.navbar-last-col ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-last-col li {
+    margin: 0 10px;
+}
+.navbar-last-col a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    display: inline-block;
+}
+.navbar-last-col ul li:hover a {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.title-text {
+    color: yellow;
+    font-weight: 900;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    width: 190px;
+    height: 100%;
+    background-color: #2C384A;
+    list-style: none;
+}
+.sidebar .text-menu {
+    color: white;
+    text-align: center;
+    line-height: 60px;
+}
+.sidebar ul a{
+    display: block;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.sidebar ul li:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+.sidebar ul li.active {
+    background-color: rgba(0,0,0,0.2);
+}
+.sidebar ul a i {
+    margin-right: 16px;
+}
+.page {
+    display: none;
+    padding: 5px 0px 10px 0px;
+}
+.content {
+    display:flex;
+    width: auto;
+    height:100%;
+    margin-left: 190px;
+    margin-top: 44px;
+}
+
+.table {
+    width: 100%;
+    border: 1px solid black;
+}
+
+.table_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+.table_header p {
+    color: #000000;
+}
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 10px;
+    color: #ffffff;
+}
+
+td button:nth-child(1) {
+    background-color: #0298cf;
+}
+
+td button:nth-child(2) {
+    background-color: #f80000;
+}
+
+.add_new {
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #0298cf;
+}
+
+.table_section {
+    height: 650px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+
+th,td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+
+td img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 5px solid #ced0d2;
+}
+
+tr:hover td {
+    color: #0298cf;
+    cursor: pointer;
+    background-color: #f6f9fc;
+}
+
+.add_product {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 10px 20px;
+    background: #8493a5;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgb(0,0,0,0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgb(0,0,0,0.3);
+}
+.box-box {
+    margin-top: 50px;
+    margin-left: 80px;
+    width: 140%;
+    height: 80vh;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #2674ac;
+    justify-content: center;
+}
+.box {
+    margin-top: 60px;
+    margin-left: 40px;
+    width: 220%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form {
+    width: 90%;
+    max-width: 600px;
+}
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: black;
+    background: rgb(225, 222, 216);
+    font-size: 15px;
+}
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+.productmanage-btn {
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: #0697ff;
+    border: 1px solid #fff;
+    width: 20%;
+    cursor: pointer;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    top: -35px;
+    font-size: 14px;
+}

@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title> STI Store  </title>
+        <link rel="stylesheet" href="CSS/Student_style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    </head>
+    <body>
+       <header> 
+            <div class="navbar">
+                <div class="navbar-first-col">
+                <h1 class="title-text">STI Bookstore</h1>
+                </div>
+                <div class="navbar-last-col">
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                        <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+                        <li><a href="Admin_index.html"><i class="fa-solid fa-angle-down"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+                <div class="sidebar">
+                    <h2 class="text-menu">Menu</h2>
+                    <ul>
+                        <li><a href="#" onclick="showPage('Home')"><i class="fa-solid fa-home"></i>Home</a></li>
+                        <li><a href="#" onclick="showPage('Products')"><i class="fa-solid fa-tag"></i>Products</a></li>
+                        <li><a href="#" onclick="showPage('Students')"><i class="fa-solid fa-person"></i>Students</a></li>
+                    </ul>
+                </div>
+            </div>
+       </header>
+       <main>
+        <div class="maincontent" id="maincontent">
+            <!-- The Home Page -->
+            <div class="page" id="Home">
+            <h1> This is the Home Page</h1>
+            </div>
+            <!-- Product Page -->
+            <div class="page" id="Products">
+                <div class="table">
+                    <div class="table_header">
+                        <p>Table Reservation System</p>
+                    </div>
+                    <div class="table_section">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product #</th>
+                                    <th>Product</th>
+                                    <th>Product Name</th>
+                                    <th>Description</th>
+                                    <th>Order</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="image/clo1.jpg"></td>
+                                    <td>SHS ID-Lace</td>
+                                    <td>N/A</td>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img src="image/clo2.jpg"></td>
+                                    <td>SHS ID-Case</td>
+                                    <td>N/A</td>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><img src="image/clo4.jpg"></td>
+                                    <td>Tertiary ID-Lace</td>
+                                    <td>N/A</td>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td><img src="image/clo3.jpeg"></td>
+                                    <td>Tertiary ID-Case</td>
+                                    <td>N/A</td>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><img src="image/clo5.webp"></td>
+                                    <td>SHS Uniform-Set-M</td>
+                                    <td>N/A</td>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td><img src="image/clo6.jpg"></td>
+                                    <td>SHS Uniform-Set-F</td>
+                                    <td>N/A</td>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td><img src="image/clo7.jpg"></td>
+                                    <td>SHS Uniform-Top-M</td>
+                                    <td>N/A</td>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td><img src="image/clo6.jpg"></td>
+                                    <td>SHS Uniform-Top-F</td>
+                                    <td>N/A</td>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td><img src="image/clo9.jpg"></td>
+                                    <td>SHS Uniform-Bottom-M</td>
+                                    <td>N/A</td>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td><img src="image/clo14.jpg"></td>
+                                    <td>SHS Uniform-Bottom-F</td>
+                                    <td>N/A</td>
+                                    <td>
+                                        <input type="checkbox" id="checkbox">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="add_product">
+                        <div>
+                            <button class="add_new" onclick="saveOrder()">Save Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="popup" id="popup">Order saved</h4>
+            <!-- Student Page -->
+            <div class="page" id="Students">
+                <h1> This is the Students Page</h1>
+            </div>
+       </main>
+       <footer>
+
+       </footer>
+       <script src="js/Student_script.js"></script>
+    </body>
+</html>
