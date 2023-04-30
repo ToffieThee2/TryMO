@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: poppins, sans-serif;
+}
+
+.page {
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    column-gap: 5px;
+    background-color: coral;
+    border-radius: 20px;
+}
+
+.page h1 {
+    margin-left: 200px;
+    margin-top: 25px;
+}
+
+.Whats_new-box {
+    background-color: #da7f7f;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+    width: 700px;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.recent_act-box {
+    background-color: #b30e0e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 15px;
+    width: 250px;
+    height: 450px;
+    overflow-y: scroll;
+}
+
+.Whats_new-box table {
+    width: 700px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.Whats_new-box thead th {
+    position: sticky;
+    top: 0;
+    text-align: left;
+    font-size: 20px;
+}
+
+.Whats_new-box th,td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+}
+
+.Whats_new-box .table_wrapper {
+    max-width: 700px;
+    margin: 0px;
+}
+
+.recent_act-box table {
+    width: 250px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.recent_act-box thead th {
+    position: sticky;
+    top: 0;
+    text-align: left;
+    font-size: 20px;
+}
+
+.recent_act-box th,td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+}
+
+.recent_act-box .table_wrapper {
+    max-width: 700px;
+    margin: 0px;
+}
